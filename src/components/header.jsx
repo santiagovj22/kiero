@@ -11,7 +11,7 @@ class Header extends React.Component {
                         <header>
                             <img className = "logo " src = {logo} alt="logo"/>
                             <div className = "navegationHelp">
-                                <a style = {{color: 'black'}} className = "hiperVi" href = "https://www.kiero.co/help.html"> Ayuda / PQR</a>
+                                <a style = {{color: 'black'}} className = "hiperVi" href = "https://www.kiero.co/help.html className " class> Ayuda / PQR</a>
                             </div>
                         </header>
                     </div>
