@@ -26,6 +26,6 @@ function userAuth(){
             let authData = await response.json();
 
             if(response.status === 400) return authData.authRes
-        }
-    }
+        } catch{}
+    } 
 }

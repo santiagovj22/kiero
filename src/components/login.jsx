@@ -1,4 +1,5 @@
 import React from 'react';
+import "./registration.css";
 const axios = require('axios');
 
 class Login extends React.Component{
@@ -10,7 +11,7 @@ class Login extends React.Component{
     render(){
         return(
             <React.Fragment>
-               <div className="main-login">
+                <div className="main-login">
                     <h1>Iniciar sesión</h1>
                     <div className="ui_not-register">
                         ¿Eres nuevo en este sitio?
@@ -75,7 +76,7 @@ class Login extends React.Component{
               </button>
             </div>
             </div>
-          </div>
+          </div> 
             </React.Fragment>
         );
     }
