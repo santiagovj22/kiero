@@ -37,12 +37,7 @@ text-align: center;
   margin: 12px 0px;
 }
 
-.lg-name-hidden{
-  display: none;
-  color: #cf0a2c;
-  font-size: 14px;
-}
-
+/*Style link forget password */
 .inp-forgetpassw{
   padding: 17px 0px;
   text-align: right;
@@ -88,17 +83,23 @@ input:focus {
   display: relative;
 }
 
-.fullName {
+.first_name {
   margin-right: 1%;
 }
-.fullName,
+.first_name,
 .email,
 .password {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
-.fullName {
+.confirmPass{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.first_name {
   width: 100%;
 }
 .email,

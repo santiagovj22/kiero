@@ -12,7 +12,7 @@ class Registration extends React.Component{
                           <div className="auth_social"></div>
                       <div className="auth_social">
                       </div>
-                      <div className="fullName lg-name">
+                      <div className="first_name lg-name">
                         <label htmlFor="first_name" className='label-login'>Nombre</label>
                         <input
                           type="text"
@@ -21,7 +21,7 @@ class Registration extends React.Component{
                           required
                         />
                       </div>
-                      <div className="fullName">
+                      <div className="first_name">
                         <label htmlFor="last_name" className='label-login'>Apellido</label>
                         <input
                           type="text"
@@ -45,8 +45,13 @@ class Registration extends React.Component{
                           name="password"
                           required
                         />
-                      
                       </div>
+
+                      <div className = "confirmPass">
+                        <label htmlFor = "confirmPass" className = 'label-login'>Confirmar Contraseña</label>
+                        <input type = "password" name = "confirmPass" required />
+                      </div>
+
                       <div className="info">
                         <small></small>
                       </div>
