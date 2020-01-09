@@ -1,5 +1,5 @@
 import React from 'react';
-import app from "../img/app.png";
+import app from "../assets/app.png";
 class Footer extends React.Component{
 
     render(){
