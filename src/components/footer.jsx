@@ -17,7 +17,7 @@ class Footer extends React.Component{
                 <a href="https://www.kiero.co/privacidad.html">
                   Política de privacidad
                 </a>
-              <button o>Contáctenos</button>
+              <button>Contáctenos</button>
                 <a href="https://www.kiero.co/help.html">Ayuda / PQR</a>
               </nav>
             </div>

@@ -1,12 +1,17 @@
 import React from 'react';
 import "./registration.css";
-const axios = require('axios');
+//const axios = require('axios');
 
 class Login extends React.Component{
    
-  constructor(props){
-    super(props)
-  }
+  // constructor(){
+  //   super()
+
+  //   this.state = {
+  //     email : '',
+  //     password : ''
+  //   }
+  // }
 
     render(){
         return(
