@@ -30,15 +30,18 @@ function userAuth(){
             userIsAuth = true;
             userId = authData;
             return userIsAuth;
-        } catch {
-            err => console.error(err)
+        } catch  (err){
+            console.error(err)
         }
     };
 
     this.register = async function(user) {
         try {
             let response = await fetch(`${mainUrl}/users`,
-            {
+            {   name : 'test',
+                last_name: 'test',
+                email:'test@test.com',
+                password : '$2b$10$JIUVLWfP3u.kLk/Hx/oIUuElj3pshILO3FVBblFjmbNczcogSeCGK',
                 method : "POST",
                 body : JSON.stringify(user),
                 headers: {

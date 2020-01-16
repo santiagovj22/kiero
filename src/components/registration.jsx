@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import userAuthService from "../services/userAuthService";
+
 class Registration extends React.Component{
   constructor(props) {
     super(props);
@@ -11,13 +13,31 @@ class Registration extends React.Component{
       confirmPass : ""
     }
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
 
   handleChange(e) {
     this.setState({
       [e.target.name] : e.target.value
     });
+  }
+
+  async handleSubmit(e) {
+    e.preventDefault();
+    let response = await userAuthService.register(this.state);
+
+    if(!response.error) {
+
+      console.log(response.id);
+      await userAuthService.setId(response.id)
+      await userAuthService.setHardAuth()
+
+        return await prompt('aqui estoy');
+        
+    }
+    
   }
 
     render(){
