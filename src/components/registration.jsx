@@ -1,18 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 class Registration extends React.Component{
-   
+  constructor(props) {
+    super(props);
+    this.state = {
+      first_name : "",
+      last_name : "",
+      email : "",
+      password : "",
+      confirmPass : ""
+    }
+
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange(e) {
+    this.setState({
+      [e.target.name] : e.target.value
+    });
+  }
+
     render(){
         return(
             <React.Fragment>
-              <div>    
-                  <form >
+                 
                     <div className="main-login">
                     <h1 className = "h3 mb-3 font-weight-normal">Sign up</h1>
                           <div className="auth_social"></div>
                       <div className="auth_social">
                       </div>
-                    <form>
+                    <form onSubmit = {this.handleSubmit}>
                       <div className="form-group">
                         <label htmlFor="first_name">Nombre</label>
                         <input
@@ -21,6 +38,8 @@ class Registration extends React.Component{
                           name="first_name"
                           placeholder = "Ingresa tu Nombre"
                           size="50px"
+                          onChange = {this.handleChange}
+                          value = {this.state.first_name}
                           required
                         />
                       </div>
@@ -31,6 +50,8 @@ class Registration extends React.Component{
                           className = "form-control"
                           name="last_name"
                           placeholder = "Ingresa tu apellido"
+                          onChange = {this.handleChange}
+                          value = {this.state.last_name}
                           required
                         />
                       </div>
@@ -41,6 +62,8 @@ class Registration extends React.Component{
                           className = "form-control"
                           name="email"
                           placeholder = "Ingresa tu correo"
+                          onChange = {this.handleChange}
+                          value = {this.state.email}
                           required
                         />
                       
@@ -52,6 +75,8 @@ class Registration extends React.Component{
                           className = "form-control"
                           name="password"
                           placeholder = "Ingresa tu contrasena"
+                          onChange = {this.handleChange}
+                          value = {this.state.password}
                           required
                         />
                       </div>
@@ -63,6 +88,8 @@ class Registration extends React.Component{
                          name = "confirmPass"
                          className = "form-control" 
                          placeholder = "confirma contrasena"
+                         onChange = {this.handleChange}
+                         value = {this.state.confirmPass}
                          required />
                       </div>
 
@@ -83,18 +110,18 @@ class Registration extends React.Component{
                       </div>
                       <div style={{ marginTop: "40px", paddingBottom: "30px"}}>
                         <div className="container_fpu container ">
-                          <button  type = "submit" className="btn btn-register">
+                          <button  type = "submit" className="btn btn-register" onClick = {this.handleClick}>
                             Crea tu cuenta en Kiero
                           </button>
+                         <Link to = "/listcategory"></Link>
                         </div>
-                       
-                      </div>
-                      
+                        <Link to = "/login">
+                            Ya tengo una cuenta, Inicia sesion
+                          </Link>
+                      </div> 
                       </form>
                     </div>
-                  </form>
-                </div>
-
+                
             </React.Fragment>
         );
     }
