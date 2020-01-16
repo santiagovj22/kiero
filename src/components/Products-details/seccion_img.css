@@ -1,0 +1,29 @@
+.imagenes {
+  background-color: darkorchid;
+  margin-top: -1.8%;
+  height: 400px;
+}
+
+.img-grande {
+  background-color: darkred;
+  height: 250px;
+}
+
+.img-mini {
+  background-color: darkturquoise;
+  height: 250px;
+}
+
+.m {
+  background-color: deeppink;
+  height: 50px;
+}
+
+.n {
+  background-color: deepskyblue;
+}
+
+.f {
+  display: inline;
+  background-color: forestgreen;
+}
