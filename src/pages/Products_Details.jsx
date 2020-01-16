@@ -8,9 +8,7 @@ import Nav from "../components/Nav/Nav";
 import NavCategory from "../components/Nav/NavCategory";
 import Slider2 from "../components/Products-details/Slider2";
 import Slider3 from "../components/Products-details/Slider3";
-import Slider1 from "../components/Products-details/Slider1";
 import Imagenes from "../components/Products-details/imagenes";
-import Buydetails from "../components/Products-details/BuyDetails/BuyDetails";
 
 const Layout = props => {
   return (
@@ -24,9 +22,6 @@ const Layout = props => {
       <Imagenes />
       <Slider2 />
       <Slider3 />
-
-      <Buydetails />
-
       <Footer />
       <InfoProduct />
     </React.Fragment>

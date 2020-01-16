@@ -3,11 +3,9 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import ProductsDetails from "./pages/Products_Details";
 import Login from "./components/login";
 import Registration from "./assets/css/registration.css";
-
 import "./assets/css/desktop.css";
 import "./assets/css/registration.css";
 import "./assets/css/navegation-mobile.css";
-import Slider1 from "./components/Products-details/Slider1";
 
 class App extends React.Component {
   render() {

@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import ProductsInfo from "./Products_info";
 import axios from "axios";
 import "../../assets/css/products_image.css";
-import ThumbnailGallery from "./thumbnail-gallery/thumbnailGallery";
 
 class productsImage extends React.Component {
   constructor(props) {
@@ -39,7 +38,6 @@ class productsImage extends React.Component {
                 </div>
               </div>
               <div className="col-2 img mt-3">
-                <ThumbnailGallery />
                 <div className="mini">
                   <img
                     src={
