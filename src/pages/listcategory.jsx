@@ -25,9 +25,9 @@ class ListCategory extends Component {
      
         render() {
            const {post} = this.state;
-           //const elements = post;
+           const elements = post;
            const posts = [];
-           for (const [i,value] of post.entries()) {
+           for (const [i,value] of elements.entries()) {
                posts.push(
                 <div className = 'row'>
                     <div className = ' col-md-4'>

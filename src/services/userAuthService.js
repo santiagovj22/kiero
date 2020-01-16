@@ -25,7 +25,13 @@ function userAuth(){
 
             let authData = await response.json();
 
-            if(response.status === 400) return authData.authRes
-        } catch{}
-    } 
+            if(response.status === 400) return authData.authRes;
+            userIsAuth = true;
+            userId = authData;
+            return userIsAuth;
+        } catch {
+            err => console.error(err)
+        }
+    };
+    
 }

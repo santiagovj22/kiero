@@ -1,78 +1,53 @@
 import React from 'react';
 import "./registration.css";
+import { Link, Redirect } from "react-router-dom";
 //const axios = require('axios');
 
 class Login extends React.Component{
    
-  // constructor(){
-  //   super()
+  //   constructor(props){
+  //     super(props)
 
-  //   this.state = {
-  //     email : '',
+  //     this.state = {
+  //      email : '',
   //     password : ''
   //   }
-  // }
+  //   this.handleInput = this.handleInput.bind(this);
+  //   this.handleSubmit = this.handleSubmit.bind(this);
+  //  }
+
+  //  handleInput(e) {
+  //    this.state[e.target.name] = e.target.value; 
+  //  }
 
     render(){
         return(
             <React.Fragment>
                 <div className="main-login">
-                    <h1>Iniciar sesión</h1>
+                <h1 className ="h3 mb-3 font-weight-normal">Sign in</h1>
                     <div className="ui_not-register">
                         ¿Eres nuevo en este sitio?
-                <a className='txt-password' href="https://kiero.co/registration">  Regístrate</a>
+                <Link to = "/register" className='txt-password'>  Regístrate</Link>
             </div>
             <div className="btn_login-user">
               <div className="auth_social">
-            
+            {/* Login with google */}
             </div> 
             <div className="auth_social">
+               {/* Login with facebook  */}
             </div>
             <div className="auth_social"><h2><span>o</span></h2></div>
-            <div className="auth_social">
-             
+                <br/>
+            <div className='form-group'>
+              <label htmlFor = "email">Email</label>
+              <input type = "email" className = "form-control" name = "email" placeholder = "enter email"></input>
             </div>
-            
-            <div className='lg-name'>
-              <label className="label-login">Email</label>
-            </div>
-            <div className="input-group flex-nowrap">
-              <div className="input-group-prepend">
-                <input
-                  id="name"
-                  type="text"
-                  className="inp-Email"
-                  placeholder="Correo electrónico"
-                  aria-label="Correo electrónico"
-                  aria-describedby="addon-wrapping"
-                  autoComplete="off"
-                  name="email"
-                  onChange={this.handleEmailChange}
-                ></input>
-              </div>
-
-            </div>
-            <div className='lg-name'>
-              {" "}
-              <label className="label-login">Contraseña</label>
-            </div>
-            <div className="input-group flex-nowrap">
-              <div className="input-group-prepend">
-                <input
-                  id="passw"
-                  type="password"
-                  className="inp-Email"
-                  placeholder="Contraseña"
-                  aria-label="Contraseña"
-                  aria-describedby="addon-wrapping"
-                  autoComplete="off"
-                  name="password"
-                  onChange={this.handlePasswordChange}
-                ></input>
-              </div>
+            <div className='form-group'>
+              <label htmlFor = "password">Password</label>
+              <input type = "password" className = "form-control" name = "password" placeholder = "enter password"></input>
             </div>
             <div className="inp-forgetpassw">
-              <a href="https://kiero.co/renovatePassword" className="txt-password">¿Olvidaste tu contraseña?</a>
+              <Link to = "/forgetPassword" className="txt-password">¿Olvidaste tu contraseña?</Link>
             </div>
 
             <div className="container_fpu-login">
