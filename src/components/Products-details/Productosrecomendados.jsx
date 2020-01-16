@@ -1,5 +1,5 @@
 import React from "react";
-import "./productosrecomendados.css";
+import "../../assets/css/productosrecomendados.css";
 import Slider1 from "./Slider1";
 
 class Productosrecomdendados extends React.Component {

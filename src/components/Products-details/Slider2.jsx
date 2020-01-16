@@ -3,7 +3,7 @@ import Swiper from "react-id-swiper";
 import axios from "axios";
 import { isMobile } from "react-device-detect";
 import LazyLoad from "react-lazyload";
-import "./slider.css";
+import "../../assets/css/slider.css";
 
 var params;
 var slidesView = 4.4555;

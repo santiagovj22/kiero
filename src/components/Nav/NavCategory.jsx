@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "../../desktop.css";
-import "../../navegation.css";
-import "../../navegation-mobile.css";
+import "../../assets/css/desktop.css";
+import "../../assets/css/navegation.css";
+import "../../assets/css/navegation-mobile.css";
 import axios from "axios";
 
 const arrayImagesCategories = [

@@ -6,7 +6,6 @@ import InfoProduct from "../components/Products-details/InfoProduct";
 import Detalles from "../components/Products-details/Detalles";
 import Nav from "../components/Nav/Nav";
 import NavCategory from "../components/Nav/NavCategory";
-import Seccionimg from "../components/Products-details/seccion_img";
 import Slider2 from "../components/Products-details/Slider2";
 import Slider3 from "../components/Products-details/Slider3";
 import Slider1 from "../components/Products-details/Slider1";

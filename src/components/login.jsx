@@ -1,34 +1,35 @@
-import React from 'react';
-import "./registration.css";
-const axios = require('axios');
+import React from "react";
+import "../assets/css/registration.css";
+const axios = require("axios");
 
-class Login extends React.Component{
-   
-  constructor(props){
-    super(props)
+class Login extends React.Component {
+  constructor(props) {
+    super(props);
   }
 
-    render(){
-        return(
-            <React.Fragment>
-                <div className="main-login">
-                    <h1>Iniciar sesión</h1>
-                    <div className="ui_not-register">
-                        ¿Eres nuevo en este sitio?
-                <a className='txt-password' href="https://kiero.co/registration">  Regístrate</a>
-            </div>
-            <div className="btn_login-user">
-              <div className="auth_social">
-            
-            </div> 
+  render() {
+    return (
+      <React.Fragment>
+        <div className="main-login">
+          <h1>Iniciar sesión</h1>
+          <div className="ui_not-register">
+            ¿Eres nuevo en este sitio?
+            <a className="txt-password" href="https://kiero.co/registration">
+              {" "}
+              Regístrate
+            </a>
+          </div>
+          <div className="btn_login-user">
+            <div className="auth_social"></div>
+            <div className="auth_social"></div>
             <div className="auth_social">
+              <h2>
+                <span>o</span>
+              </h2>
             </div>
-            <div className="auth_social"><h2><span>o</span></h2></div>
-            <div className="auth_social">
-             
-            </div>
-            
-            <div className='lg-name'>
+            <div className="auth_social"></div>
+
+            <div className="lg-name">
               <label className="label-login">Email</label>
             </div>
             <div className="input-group flex-nowrap">
@@ -45,9 +46,8 @@ class Login extends React.Component{
                   onChange={this.handleEmailChange}
                 ></input>
               </div>
-
             </div>
-            <div className='lg-name'>
+            <div className="lg-name">
               {" "}
               <label className="label-login">Contraseña</label>
             </div>
@@ -67,7 +67,12 @@ class Login extends React.Component{
               </div>
             </div>
             <div className="inp-forgetpassw">
-              <a href="https://kiero.co/renovatePassword" className="txt-password">¿Olvidaste tu contraseña?</a>
+              <a
+                href="https://kiero.co/renovatePassword"
+                className="txt-password"
+              >
+                ¿Olvidaste tu contraseña?
+              </a>
             </div>
 
             <div className="container_fpu-login">
@@ -75,10 +80,10 @@ class Login extends React.Component{
                 Ingresar
               </button>
             </div>
-            </div>
-          </div> 
-            </React.Fragment>
-        );
-    }
+          </div>
+        </div>
+      </React.Fragment>
+    );
+  }
 }
 export default Login;

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "./infoproduct.css";
+import "../../assets/css/infoproduct.css";
 
 class InfoProduct extends React.Component {
   render() {

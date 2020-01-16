@@ -1,5 +1,5 @@
 import React from "react";
-import "./mediospago.css";
+import "../../assets/css/mediospago.css";
 import Pago from "../../assets/img/payModal.png";
 import Pay2 from "../../assets/img/pay2.png";
 import PayBF from "../../assets/img/payBaloEfe.png";

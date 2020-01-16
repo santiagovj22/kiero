@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import axios from "axios";
-import "./detalles.css";
+import "../../assets/css/detalles.css";
 import MediosPago from "./MediosPago";
 import Productosrecomendados from "./Productosrecomendados";
 

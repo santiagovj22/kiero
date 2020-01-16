@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import ProductsInfo from "./Products_info";
 import axios from "axios";
-import "./products_image.css";
+import "../../assets/css/products_image.css";
 import ThumbnailGallery from "./thumbnail-gallery/thumbnailGallery";
 
 class productsImage extends React.Component {

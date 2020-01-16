@@ -1,6 +1,6 @@
 import React from "react";
-import "./imagenes.css";
-import beleza from "../../assets/belleza.jpg";
+import "../../assets/css/imagenes.css";
+import beleza from "../../assets/img/belleza.jpg";
 import axios from "axios";
 
 class Imagenes extends React.Component {
