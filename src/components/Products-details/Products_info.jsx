@@ -12,23 +12,22 @@ class productsImage extends React.Component {
   }
 
   async componentWillMount() {
-    let { data } = await axios.get("http://localhost:5000/products/2");
+    let { data } = await axios.get("http://10.4.28.183:5000/products/2502209");
     if (data.error) console.error(data.message);
+
     this.setState({
       posts: data.data
     });
   }
-
+  
   render() {
     return (
       <Fragment>
         <div className="col-5 derecha">
           <div className="m-5">
-            <h4>
-              <p>{this.state.posts.titulo}</p>
-            </h4>
-
-            <h2>{this.state.posts.price}</h2>
+          
+           <h2 className='titulo'>{this.state.posts.title}</h2>
+            <h2>$ {this.state.posts.price}</h2>
             <img className="pago mt-3" src={pago} />
 
             <div

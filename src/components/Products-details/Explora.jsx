@@ -12,7 +12,7 @@ class Imagenes extends React.Component {
   }
 
   async componentWillMount() {
-    let { data } = await axios.get(`http://localhost:5000/products/5`);
+    let { data } = await axios.get(`http://10.4.28.183:5000/1`);
     if (data.error) console.error(data.message);
     this.setState({
       posts: data.data

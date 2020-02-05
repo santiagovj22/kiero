@@ -13,7 +13,7 @@ class Detalles extends React.Component {
     };
   }
   async componentWillMount() {
-    let { data } = await axios.get("http://localhost:5000/products/5");
+    let { data } = await axios.get("http://10.4.28.183:5000/products/2502209");
     if (data.error) console.error(data.message);
     this.setState({
       posts: data.data
@@ -26,14 +26,14 @@ class Detalles extends React.Component {
         <div className="container ">
           <div className="row ">
             <div className="col-7 d">
-              <p className="mt-4">PRODUCTOS RECOMENDADOS</p>
+              <p className="mt-4 title-description">PRODUCTOS RECOMENDADOS</p>
               <Productosrecomendados />
-              <p className="mt-5">DETALLE DEL PRODUCTO</p>
-              <p>Titulo</p>
-              <p>{this.state.posts.titulo} </p>
-              <p>Descripciòn</p>
+              <p className="mt-5 title-description">DETALLE DEL PRODUCTO</p>
+              <h2>Titulo</h2>
+              <p>{this.state.posts.title} </p>
+              <h2>Descripciòn</h2>
               <p>{this.state.posts.description}</p>
-              <p>Informacion</p>
+              <h2>Informacion</h2>
               <p>
                 Kit de tarjeta de memoria Micro SD TF macho a hembra SD
                 Extensión Soft Flat FPC Cable Extender 10cm Puede extender la
@@ -41,9 +41,19 @@ class Detalles extends React.Component {
                 conectar la tarjeta SD para el móvil y Tablet La tarjeta de
                 memoria no incluida Soft Flat FPC Cable Longitud 10cm Aprox
               </p>
-              <p>caracteristica</p>
-              <p>bgldhlijdhiyjd</p>
-              <p>ME RETRACTÉ DE MI COMPRA!</p>
+              <h2>caracteristica</h2>
+              <p>Largo: {this.state.posts.height}</p>
+              <p>Ancho: {this.state.posts.width}</p>
+              <p>Alto: {this.state.posts.height}</p>
+              <p>Peso: {this.state.posts.weight}</p>
+
+              <p>SPICEIMPORTS</p>
+              <p>*Este producto viene desde Estados Unidos</p>
+              <p>*(Entrega de 3 a 7 habiles)</p>
+              <p>*Envio gratis</p>
+
+
+              <h2>ME RETRACTÉ DE MI COMPRA!</h2>
               <p>
                 En caso de ya que no quieras el producto que recibiste puedes
                 realizar la devolución de esté, en un periodo no mayor a 5 días
@@ -53,7 +63,7 @@ class Detalles extends React.Component {
                 paquete.
               </p>
 
-              <p>PREGUNTAS Y RESPUESTAS</p>
+              <h2>PREGUNTAS Y RESPUESTAS</h2>
               <div className="container">
                 <div className="row btn">
                   <button
