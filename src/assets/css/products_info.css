@@ -1,0 +1,27 @@
+.derecha {
+  height: 525px;
+  float: right;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px solid rgb(223, 223, 223);
+ ;
+
+}
+
+.text {
+  float: right;
+  background-color: white;
+}
+
+.img {
+  height: 500px;
+}
+
+.im {
+  margin-top: 20%;
+}
+
+.titulo{
+  size:22px;
+ 
+}

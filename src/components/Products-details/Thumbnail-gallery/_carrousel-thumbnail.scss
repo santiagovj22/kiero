@@ -1,0 +1,107 @@
+//here we declare the left container
+.left-container{
+  
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+    float: left;
+
+}
+
+.left-thumbnail{    
+    width: 100%;
+    height: 516px;
+    margin-left: -2%;
+
+}
+
+.p-description{
+    color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+.active-thumbnail{
+    height: inherit;
+    left:77px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    min-height: 516px;
+    margin: 0 0 1rem;
+    width:500px;
+    border-top-right-radius: 20px;
+    
+  
+    
+}
+
+.grid-thumbnail{
+    height: 100%;
+    width: 10%;   
+    overflow:scroll;
+
+ 
+
+
+}
+
+.grid-thumbnail::-webkit-scrollbar {
+    width: 2px;
+    
+  }
+ 
+  .grid-thumbnail::-webkit-scrollbar-thumb {
+
+    background-color: #dfdfdf;
+    border-radius: 10px;
+  }
+
+
+
+.thumbnail{
+    height: 14.31%;
+    width: 100%;
+
+    position: relative;
+    
+  
+
+}
+
+.img-thumbnail{
+    width: 100%;
+    height: 100%;
+    
+   
+    cursor: pointer;
+    object-fit: scale-down;
+  
+    &:hover{
+        border-left: 3px solid #cf0a2c; 
+        
+    }
+}
+
+.img-thumbnail-active{
+    width: 67%;
+    height: 470px;
+    display: block;
+    max-width: 500px; 
+    margin: auto; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    object-fit: scale-down;
+}
+
+
+.img-grande{width:1000px;
+    height:624px;
+           }
+
+// end left container

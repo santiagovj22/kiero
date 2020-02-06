@@ -1,0 +1,112 @@
+.imga {
+  background-color: fuchsia;
+  height: 200px;
+}
+
+.s {
+  background-color: white;
+  height: 450px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.e {
+  background-color: white;
+  height: 450px;
+  padding-left: 0px;
+}
+
+.img1 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+.img2 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.img3 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.img4 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.img5 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+.img6 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.img7 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.img8 {
+  background-color: white;
+  height: 180px;
+  display: inline-flex;
+  width: 180px;
+  margin-left: 7px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.titu {
+  height: 250px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.blanco {
+  background-color: white;
+  height: 50px;
+  margin-top: -2%;
+}
+
+.explora {
+  text-align: left;
+  margin-left: 10%;
+}

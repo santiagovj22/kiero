@@ -1,0 +1,30 @@
+.d {
+  background-color: white;
+  border-right: 1px solid rgb(223, 223, 223);
+  border-top: 1px solid rgb(223, 223, 223);
+  border-bottom: 5px solid rgb(223, 223, 223);
+  margin-top: -2%;
+}
+
+
+p{
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 20pt;}
+
+  h2{
+    text-transform: uppercase;
+    color:#424242;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.title-description {
+  text-transform: uppercase;
+  color: #424242;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+}
