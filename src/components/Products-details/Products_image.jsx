@@ -3,7 +3,7 @@ import ProductsInfo from "./Products_info";
 import axios from "axios";
 import "../../assets/css/products_image.css";
 //import Imgprincipal from '../Products-details/Img-principal';
-import ThumbnailGallery from '../Products-details/Thumbnail-gallery.jsx/thumbnail-gallery'
+import ThumbnailGallery from './Thumbnail-gallery/thumbnail-gallery'
 
 
 class productsImage extends React.Component {
@@ -51,10 +51,9 @@ class productsImage extends React.Component {
                           </div>
                   </div>
 
-*/}<ThumbnailGallery/>
+*/}
+              <ThumbnailGallery/>
             </div> 
-          
-            
             <ProductsInfo />
           </div>
         </div>

@@ -49,12 +49,10 @@ class ThumbnailGallery extends Component {
     }
     return null;
   };
-
   handleClick = e => {
     const newActiveIndex = e.target.getAttribute("data-index");
     this.setState({ activeIndex: newActiveIndex });
   };
-
   render() {
   if(isMobile){      
       const params = {
@@ -69,10 +67,8 @@ class ThumbnailGallery extends Component {
       const lstImg = 
         thumbnails.files.map((thumbnail, i) => {
         return (
-
            <img  className='banner-mobile__img' src={thumbnail.url} key={i}alt='img-thumbnails'/>
         );      
-
        
       })
     
@@ -92,8 +88,6 @@ class ThumbnailGallery extends Component {
       </div>
     );
   }
-
   }
 }
-
 export default ThumbnailGallery;

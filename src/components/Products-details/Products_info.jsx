@@ -2,14 +2,38 @@ import React, { Fragment } from "react";
 import "../../assets/css/products_info.css";
 import axios from "axios";
 import pago from "../../assets/img/payModal.png";
+import Select from "react-select";
+import useModal from 'use-react-modal'
+
+const UnityAvaibles = [
+  { label: "1 Unidad", value: 1 },
+  { label: "2 Unidades", value: 2 },
+  { label: "3 Unidades", value: 3 },
+  { label: "4 Unidades", value: 4 },
+  { label: "5 Unidades", value: 5 }
+];
+
+
 
 class productsImage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      posts: [],
+      selectedOption: null,
     };
+
+    this.handleChange = this.handleChange.bind(this);
   }
+
+  componentDidMount(){
+    this.setState({ selectedOption:1 });
+  }
+  
+  handleChange = selectedOption => {
+    this.setState({ selectedOption });
+  };
+
 
   async componentWillMount() {
     let { data } = await axios.get("http://10.4.28.183:5000/products/2502209");
@@ -21,6 +45,7 @@ class productsImage extends React.Component {
   }
   
   render() {
+
     return (
       <Fragment>
         <div className="col-5 derecha">
@@ -30,41 +55,21 @@ class productsImage extends React.Component {
             <h2>$ {this.state.posts.price}</h2>
             <img className="pago mt-3" src={pago} />
 
-            <div
-              className="btn-group mt-4"
-              role="group"
-              aria-label="Button group with nested dropdown"
+
+            <div className="quantityMb">
+            <Select
+              className="drpUnitiesMb"
+              options={UnityAvaibles}
+              onChange={this.handleChange}
+              defaultValue={UnityAvaibles[0]}
+              isSearchable={false}
             >
-              <div className="btn-group" role="group">
-                <button
-                  id="btnGroupDrop1"
-                  type="button"
-                  className="btn btn-secondary dropdown-toggle"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  1 Unidad
-                </button>
-                <div className="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                  <a className="dropdown-item" href="#">
-                    2 Unidades
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    3 Unidades
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    4 Unidades
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    5 Unidades
-                  </a>
-                </div>
-              </div>
-            </div>
+              {" "}
+            </Select>
+          </div>
 
             <a href="">
-              <p className="mt-2">Más información</p>
+              <p className="mt-2" >Más información</p>
             </a>
             <button type="button" className="btn btn-danger">
               comprar
